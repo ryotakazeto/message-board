@@ -14,10 +14,12 @@
   
   <div class="container-fluid">
    <div class="row">
+      <div class="col-sm-1">年齢:</div>
+      <div class="col-sm-1"><%= f.number_field :age,class:"form-control"%></div>  
       <div class="col-sm-1">名前:</div>
-      <div class="col-sm-11"><%= f.text_field :name %></div>
-  </div>
-  <br>
+      <div class="col-sm-9"><%= f.text_field :name %></div>
+   </div>
+   </br>
   <div class="row">
      <div class="col-sm-1">内容:</div>
      <div class="col-sm-11"><%= f.text_area :body, :size=>"20x10"%></div>
